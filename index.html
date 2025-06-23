@@ -837,6 +837,13 @@
                 <button id="game13-button" onclick="openGame('minesnew')">Open</button>
             </div>
         </div>
+        <div class="game">
+            <img src="thi.png" alt="KingThimbles Preview">
+            <div class="game-info">
+                <h3 id="game-title">King Thimbles</h3>
+                <button id="game13-button" onclick="openGame('kingth')">Open</button>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -1614,6 +1621,10 @@ function openGame(game) {
         queen: {
             ios: 'queen/index.html',
             other: 'queen/index.html'
+        },
+        kingth: {
+            ios: 'king/index.html',
+            other: 'king/index.html'
         }
     };
             var url = isIOS ? links[game].ios : links[game].other;
