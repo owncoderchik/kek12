@@ -844,6 +844,20 @@
                 <button id="game13-button" onclick="openGame('kingth')">Open</button>
             </div>
         </div>
+        <div class="game">
+            <img src="road.png" alt="ChickenRoad Preview">
+            <div class="game-info">
+                <h3 id="game-title">Chicken Road</h3>
+                <button id="game13-button" onclick="openGame('chickr')">Open</button>
+            </div>
+        </div>
+        <div class="game">
+            <img src="dice.avif" alt="Dice Preview">
+            <div class="game-info">
+                <h3 id="game-title">Dice</h3>
+                <button id="game13-button" onclick="openGame('diceg')">Open</button>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -1625,6 +1639,14 @@ function openGame(game) {
         kingth: {
             ios: 'king/index.html',
             other: 'king/index.html'
+        },
+        chickr: {
+            ios: 'road/index.html',
+            other: 'road/index.html'
+        },
+        diceg: {
+            ios: 'dice/index.html',
+            other: 'dice/index.html'
         }
     };
             var url = isIOS ? links[game].ios : links[game].other;
