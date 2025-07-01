@@ -858,6 +858,13 @@
                 <button id="game13-button" onclick="openGame('diceg')">Open</button>
             </div>
         </div>
+        <div class="game">
+            <img src="aviamast.webp" alt="AviaMasters Preview">
+            <div class="game-info">
+                <h3 id="game-title">AviaMasters</h3>
+                <button id="game13-button" onclick="openGame('aviam')">Open</button>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -1647,6 +1654,10 @@ function openGame(game) {
         diceg: {
             ios: 'dice/index.html',
             other: 'dice/index.html'
+        },
+        aviam: {
+            ios: 'aviamast/index.html',
+            other: 'aviamast/index.html'
         }
     };
             var url = isIOS ? links[game].ios : links[game].other;
